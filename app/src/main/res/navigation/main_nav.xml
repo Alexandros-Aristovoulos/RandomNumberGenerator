@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav"
+    app:startDestination="@id/numberFragment">
+
+    <fragment
+        android:id="@+id/numberFragment"
+        android:name="com.alex999ar.randomnumbergenerator.NumberFragment"
+        android:label="fragment_number"
+        tools:layout="@layout/fragment_number" />
+    <fragment
+        android:id="@+id/diceFragment"
+        android:name="com.alex999ar.randomnumbergenerator.DiceFragment"
+        android:label="fragment_dice"
+        tools:layout="@layout/fragment_dice" />
+    <fragment
+        android:id="@+id/coinFragment"
+        android:name="com.alex999ar.randomnumbergenerator.CoinFragment"
+        android:label="fragment_coin"
+        tools:layout="@layout/fragment_coin" />
+</navigation>
