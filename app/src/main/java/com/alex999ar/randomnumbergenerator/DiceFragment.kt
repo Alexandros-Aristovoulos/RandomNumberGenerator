@@ -59,7 +59,9 @@ class DiceFragment : Fragment() {
             }
             //show that list
             textView2.text = diceTossList.toString()
+            //calculate and show the sum
             val sum = diceTossList.sum()
+            showTotalSum_fragmentDice_textView.text = sum.toString()
         }
     }
 

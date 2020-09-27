@@ -7,4 +7,7 @@
     <string name="number">Number</string>
     <string name="quantity">Quantity</string>
     <string name="sides">Sides</string>
+    <string name="totalSum">Total Sum</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
 </resources>
