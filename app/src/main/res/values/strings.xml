@@ -6,4 +6,5 @@
     <string name="dice">Dice</string>
     <string name="number">Number</string>
     <string name="quantity">Quantity</string>
+    <string name="sides">Sides</string>
 </resources>
