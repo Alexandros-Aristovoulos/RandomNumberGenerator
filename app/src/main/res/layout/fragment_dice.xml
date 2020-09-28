@@ -22,31 +22,37 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="152dp"
+        android:layout_marginTop="32dp"
         android:text="@string/quantity"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/diceTitle_fragmentDice_textView" />
 
     <EditText
         android:id="@+id/quantity_diceFragment_editTextNumber"
-        android:layout_width="wrap_content"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:background="@drawable/custom_put_text"
         android:ems="10"
         android:inputType="number"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="@color/white"
         app:layout_constraintBaseline_toBaselineOf="@+id/quantity_diceFragment_textView"
         app:layout_constraintStart_toEndOf="@+id/quantity_diceFragment_textView" />
 
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:id="@+id/showDice_fragmentDice_textView"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Dice Fragment"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/dice_fragmentDice_textView" />
 
     <RadioGroup
         android:id="@+id/sides_diceFragment_radioGroup"
@@ -123,5 +129,49 @@
         android:layout_marginTop="32dp"
         app:layout_constraintStart_toEndOf="@+id/sum_fragmentDice_textView"
         app:layout_constraintTop_toBottomOf="@+id/sides_diceFragment_radioGroup" />
+
+    <TextView
+        android:id="@+id/tossDice_fragmentDice_textView"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:background="@drawable/copy_drawable"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/tossDice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sum_fragmentDice_textView" />
+
+    <TextView
+        android:id="@+id/dice_fragmentDice_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/dice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tossDice_fragmentDice_textView" />
+
+    <TextView
+        app:drawableEndCompat = "@drawable/ic_copy"
+        android:drawablePadding="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:background="@drawable/copy_drawable"
+        app:drawableTint="@color/white"
+        android:textColor="@color/white"
+        android:id="@+id/copyDice_fragmentDice_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/copy"
+        app:layout_constraintBaseline_toBaselineOf="@+id/dice_fragmentDice_textView"
+        app:layout_constraintStart_toEndOf="@+id/dice_fragmentDice_textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

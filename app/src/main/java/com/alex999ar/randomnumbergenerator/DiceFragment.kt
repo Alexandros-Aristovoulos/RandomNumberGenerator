@@ -1,5 +1,8 @@
 package com.alex999ar.randomnumbergenerator
 
+import android.content.ClipData
+import android.content.ClipboardManager
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -7,9 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.RadioButton
 import android.widget.Toast
-import kotlinx.android.synthetic.*
 import kotlinx.android.synthetic.main.fragment_coin.*
-import kotlinx.android.synthetic.main.fragment_coin.textView3
 import kotlinx.android.synthetic.main.fragment_dice.*
 
 
@@ -33,7 +34,7 @@ class DiceFragment : Fragment() {
         //default quantity = 1
         quantity_diceFragment_editTextNumber.setText("1")
 
-        textView2.setOnClickListener {
+        tossDice_fragmentDice_textView.setOnClickListener {
             //times we will toss the dice
             var quantity = quantity_diceFragment_editTextNumber.text.toString().toInt()
 
@@ -58,11 +59,25 @@ class DiceFragment : Fragment() {
                 diceTossList.add(diceToss(sides))
             }
             //show that list
-            textView2.text = diceTossList.toString()
+            showDice_fragmentDice_textView.text = diceTossList.toString()
             //calculate and show the sum
             val sum = diceTossList.sum()
             showTotalSum_fragmentDice_textView.text = sum.toString()
         }
+
+        copyDice_fragmentDice_textView.setOnClickListener {
+            //if it is empty you don't copy anything
+            if(showDice_fragmentDice_textView.text.isEmpty()){
+                return@setOnClickListener
+            }
+            //code to copy the text
+            val clipboard: ClipboardManager = activity?.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+            val clip: ClipData = ClipData.newPlainText("Dice", showDice_fragmentDice_textView.text.toString())
+            clipboard.setPrimaryClip(clip)
+            //inform the user that they copied the text
+            Toast.makeText(context,"Copied the dice", Toast.LENGTH_SHORT).show()
+        }
+
     }
 
     private fun diceToss(sides:Int):Int{

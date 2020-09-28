@@ -10,4 +10,10 @@
     <string name="totalSum">Total Sum</string>
     <string name="from">From</string>
     <string name="to">To</string>
+    <string name="generateNum">Generate Numbers</string>
+    <string name="tossDice">Toss Dice</string>
+    <string name="flipCoin">Flip Coin</string>
+    <string name="numbers">Numbers</string>
+    <string name="copy">Copy</string>
+    <string name="coins">Coins</string>
 </resources>

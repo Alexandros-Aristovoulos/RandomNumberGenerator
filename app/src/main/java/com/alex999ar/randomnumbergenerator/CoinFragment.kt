@@ -1,5 +1,8 @@
 package com.alex999ar.randomnumbergenerator
 
+import android.content.ClipData
+import android.content.ClipboardManager
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -7,7 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import kotlinx.android.synthetic.main.fragment_coin.*
-import kotlin.system.exitProcess
+import kotlinx.android.synthetic.main.fragment_number.*
 
 class CoinFragment : Fragment() {
 
@@ -31,7 +34,7 @@ class CoinFragment : Fragment() {
         //default quantity = 1
         quantity_coinFragment_editTextNumber.setText("1")
 
-        textView3.setOnClickListener {
+        flipCoin_fragmentCoin_textView.setOnClickListener {
             //list where the results will be stored
             var  coinTossList = mutableListOf<String>()
             //times we will flip the coin
@@ -49,7 +52,20 @@ class CoinFragment : Fragment() {
                 coinTossList.add(coinToss())
             }
             //show that list
-            textView3.text = coinTossList.toString()
+            showCoin_fragmentCoin_textView.text = coinTossList.toString()
+        }
+
+        copy_fragmentCoin_textView.setOnClickListener {
+            //if it is empty you don't copy anything
+            if(showCoin_fragmentCoin_textView.text.isEmpty()){
+                return@setOnClickListener
+            }
+            //code to copy the text
+            val clipboard: ClipboardManager = activity?.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+            val clip: ClipData = ClipData.newPlainText("Coins", showCoin_fragmentCoin_textView.text.toString())
+            clipboard.setPrimaryClip(clip)
+            //inform the user that they copied the text
+            Toast.makeText(context,"Copied the coins", Toast.LENGTH_SHORT).show()
         }
 
     }

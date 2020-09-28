@@ -1,12 +1,16 @@
 package com.alex999ar.randomnumbergenerator
 
+import android.content.ClipData
+import android.content.ClipboardManager
+import android.content.Context
+import android.content.Context.CLIPBOARD_SERVICE
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import kotlinx.android.synthetic.main.fragment_coin.*
+import androidx.core.content.ContextCompat.getSystemService
 import kotlinx.android.synthetic.main.fragment_number.*
 
 class NumberFragment : Fragment() {
@@ -31,7 +35,7 @@ class NumberFragment : Fragment() {
         from_numberFragment_editTextNumber.setText("0")
         to_numberFragment_editTextNumber.setText("10")
 
-        textView.setOnClickListener {
+        generateNumbers_fragmentNumber_textView.setOnClickListener {
             //list where the results will be stored
             var  numberList = mutableListOf<Int>()
             //times we will flip the coin
@@ -58,9 +62,24 @@ class NumberFragment : Fragment() {
                 numberList.add(MainActivity().rand(from, to))
             }
             //show that list
-            textView.text = numberList.toString()
+            showNumbers_fragmentNumber_textView.text = numberList.toString()
+        }
+
+        copy_fragmentNumber_textView.setOnClickListener {
+            //if it is empty you don't copy anything
+            if(showNumbers_fragmentNumber_textView.text.isEmpty()){
+                return@setOnClickListener
+            }
+            //code to copy the text
+            val clipboard: ClipboardManager = activity?.getSystemService(CLIPBOARD_SERVICE) as ClipboardManager
+            val clip: ClipData = ClipData.newPlainText("Numbers", showNumbers_fragmentNumber_textView.text.toString())
+            clipboard.setPrimaryClip(clip)
+            //inform the user that they copied the text
+            Toast.makeText(context,"Copied the numbers", Toast.LENGTH_SHORT).show()
         }
 
     }
+
+
 
 }
