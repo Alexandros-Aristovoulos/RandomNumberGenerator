@@ -10,7 +10,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.RadioButton
 import android.widget.Toast
-import kotlinx.android.synthetic.main.fragment_coin.*
 import kotlinx.android.synthetic.main.fragment_dice.*
 
 
@@ -42,6 +41,14 @@ class DiceFragment : Fragment() {
             if(quantity == 0){
                 val myToast = Toast.makeText(context,"You need at least 1 dice", Toast.LENGTH_SHORT)
                 myToast.show()
+                return@setOnClickListener
+            }
+
+            //check if user entered a way too big quantity
+            if(quantity > 9999){
+                Toast.makeText(context,"The quantity you entered is too big", Toast.LENGTH_SHORT).show()
+                //reset quantity to 1
+                quantity_diceFragment_editTextNumber.setText("1")
                 return@setOnClickListener
             }
 

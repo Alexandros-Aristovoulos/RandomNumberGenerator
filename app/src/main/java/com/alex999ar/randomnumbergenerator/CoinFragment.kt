@@ -10,7 +10,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import kotlinx.android.synthetic.main.fragment_coin.*
-import kotlinx.android.synthetic.main.fragment_number.*
 
 class CoinFragment : Fragment() {
 
@@ -47,6 +46,15 @@ class CoinFragment : Fragment() {
                 return@setOnClickListener
             }
 
+            //check if user entered a way too big quantity
+            if(quantity > 9999){
+                Toast.makeText(context,"The quantity you entered is too big", Toast.LENGTH_SHORT).show()
+                //reset quantity to 1
+                quantity_coinFragment_editTextNumber.setText("1")
+                return@setOnClickListener
+            }
+
+
             //add results to list
             for(i in 0 until quantity){
                 coinTossList.add(coinToss())
@@ -69,6 +77,8 @@ class CoinFragment : Fragment() {
         }
 
     }
+
+
 
     //calculate the result of a coin toss
     private fun coinToss():String{

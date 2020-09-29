@@ -2,7 +2,6 @@ package com.alex999ar.randomnumbergenerator
 
 import android.content.ClipData
 import android.content.ClipboardManager
-import android.content.Context
 import android.content.Context.CLIPBOARD_SERVICE
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -10,7 +9,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.core.content.ContextCompat.getSystemService
 import kotlinx.android.synthetic.main.fragment_number.*
 
 class NumberFragment : Fragment() {
@@ -49,6 +47,14 @@ class NumberFragment : Fragment() {
             if(quantity == 0){
                 val myToast = Toast.makeText(context,"You need at least 1 number", Toast.LENGTH_SHORT)
                 myToast.show()
+                return@setOnClickListener
+            }
+
+            //check if user entered a way too big quantity
+            if(quantity > 9999){
+                Toast.makeText(context,"The quantity you entered is too big", Toast.LENGTH_SHORT).show()
+                //reset quantity to 1
+                quantity_numberFragment_editTextNumber.setText("1")
                 return@setOnClickListener
             }
 

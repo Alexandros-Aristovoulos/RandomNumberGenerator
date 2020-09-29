@@ -1,10 +1,8 @@
 package com.alex999ar.randomnumbergenerator
 
-import android.content.ClipData
-import android.content.ClipboardManager
-import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -33,4 +31,10 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+
+    //close when pressing back
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finish()
+    }
 }
