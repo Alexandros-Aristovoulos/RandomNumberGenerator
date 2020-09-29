@@ -21,7 +21,6 @@
             android:orientation="vertical">
 
             <EditText
-                android:textAlignment="center"
                 android:id="@+id/from_numberFragment_editTextNumber"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -30,6 +29,7 @@
                 android:inputType="number"
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp"
+                android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="18sp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/from_numberFragment_textView"
@@ -39,8 +39,8 @@
                 android:id="@+id/numbers_fragmentNumber_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
                 android:text="@string/numbers"
                 android:textColor="@color/white"
                 android:textSize="18sp"
@@ -51,7 +51,7 @@
                 android:id="@+id/quantity_numberFragment_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="32dp"
                 android:text="@string/quantity"
                 android:textColor="@color/white"
@@ -63,7 +63,7 @@
                 android:id="@+id/generateNumbers_fragmentNumber_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="32dp"
                 android:background="@drawable/copy_drawable"
                 android:paddingStart="8dp"
                 android:paddingTop="4dp"
@@ -111,7 +111,7 @@
                 android:id="@+id/to_numberFragment_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="32dp"
                 android:text="@string/to"
                 android:textColor="@color/white"
@@ -120,22 +120,21 @@
                 app:layout_constraintTop_toBottomOf="@+id/from_numberFragment_textView" />
 
             <TextView
-                android:textIsSelectable="true"
-                android:justificationMode="inter_word"
                 android:id="@+id/showNumbers_fragmentNumber_textView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
+                android:layout_marginEnd="8dp"
+                android:justificationMode="inter_word"
                 android:textColor="@color/white"
+                android:textIsSelectable="true"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/numbers_fragmentNumber_textView" />
 
             <EditText
-                android:textAlignment="center"
                 android:id="@+id/quantity_numberFragment_editTextNumber"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -145,6 +144,7 @@
                 android:inputType="number"
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp"
+                android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="18sp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/quantity_numberFragment_textView"
@@ -154,7 +154,7 @@
                 android:id="@+id/from_numberFragment_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="32dp"
                 android:text="@string/from"
                 android:textColor="@color/white"
@@ -163,7 +163,6 @@
                 app:layout_constraintTop_toBottomOf="@+id/numberTitle_fragmentNumber_textView" />
 
             <EditText
-                android:textAlignment="center"
                 android:id="@+id/to_numberFragment_editTextNumber"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -172,6 +171,7 @@
                 android:inputType="number"
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp"
+                android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="18sp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/to_numberFragment_textView"

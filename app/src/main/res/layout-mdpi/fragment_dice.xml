@@ -27,7 +27,7 @@
 
                 android:layout_marginStart="16dp"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/sum_fragmentDice_textView"
                 app:layout_constraintStart_toEndOf="@+id/sum_fragmentDice_textView" />
 
@@ -35,11 +35,11 @@
                 android:id="@+id/sides_fragmentDice_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="32dp"
                 android:text="@string/sides"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/quantity_diceFragment_textView" />
 
@@ -47,11 +47,11 @@
                 android:id="@+id/sum_fragmentDice_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
                 android:text="@string/totalSum"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/showDice_fragmentDice_textView" />
 
@@ -59,11 +59,11 @@
                 android:id="@+id/quantity_diceFragment_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="32dp"
                 android:text="@string/quantity"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/diceTitle_fragmentDice_textView" />
 
@@ -71,13 +71,13 @@
                 android:id="@+id/showDice_fragmentDice_textView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
+                android:layout_marginEnd="8dp"
                 android:justificationMode="inter_word"
                 android:textColor="@color/white"
                 android:textIsSelectable="true"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/dice_fragmentDice_textView" />
@@ -95,7 +95,7 @@
                 android:paddingBottom="4dp"
                 android:text="@string/copy"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 app:drawableEndCompat="@drawable/ic_copy"
                 app:drawableTint="@color/white"
                 app:layout_constraintBaseline_toBaselineOf="@+id/dice_fragmentDice_textView"
@@ -105,7 +105,6 @@
                 android:id="@+id/sides_diceFragment_radioGroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
                 android:orientation="horizontal"
                 app:layout_constraintBottom_toBottomOf="@+id/sides_fragmentDice_textView"
                 app:layout_constraintStart_toEndOf="@+id/sides_fragmentDice_textView"
@@ -118,7 +117,7 @@
                     android:buttonTint="@color/white"
                     android:text="4"
                     android:textColor="@color/white"
-                    android:textSize="18sp" />
+                    android:textSize="14sp" />
 
                 <RadioButton
                     android:id="@+id/sides6_diceFragment_radioButton"
@@ -127,7 +126,7 @@
                     android:buttonTint="@color/white"
                     android:text="6"
                     android:textColor="@color/white"
-                    android:textSize="18sp" />
+                    android:textSize="14sp" />
 
                 <RadioButton
                     android:id="@+id/sides10_diceFragment_radioButton"
@@ -136,7 +135,7 @@
                     android:buttonTint="@color/white"
                     android:text="10"
                     android:textColor="@color/white"
-                    android:textSize="18sp" />
+                    android:textSize="14sp" />
 
                 <RadioButton
                     android:id="@+id/sides12_diceFragment_radioButton"
@@ -145,7 +144,7 @@
                     android:buttonTint="@color/white"
                     android:text="12"
                     android:textColor="@color/white"
-                    android:textSize="18sp" />
+                    android:textSize="14sp" />
 
                 <RadioButton
                     android:id="@+id/sides20_diceFragment_radioButton"
@@ -154,7 +153,7 @@
                     android:buttonTint="@color/white"
                     android:text="20"
                     android:textColor="@color/white"
-                    android:textSize="18sp" />
+                    android:textSize="14sp" />
 
                 <RadioButton
                     android:id="@+id/sides24_diceFragment_radioButton"
@@ -163,7 +162,7 @@
                     android:buttonTint="@color/white"
                     android:text="24"
                     android:textColor="@color/white"
-                    android:textSize="18sp" />
+                    android:textSize="14sp" />
             </RadioGroup>
 
             <EditText
@@ -178,7 +177,7 @@
                 android:paddingEnd="16dp"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/quantity_diceFragment_textView"
                 app:layout_constraintStart_toEndOf="@+id/quantity_diceFragment_textView" />
 
@@ -186,7 +185,6 @@
                 android:id="@+id/tossDice_fragmentDice_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
                 android:background="@drawable/copy_drawable"
                 android:paddingStart="8dp"
                 android:paddingTop="4dp"
@@ -194,7 +192,7 @@
                 android:paddingBottom="4dp"
                 android:text="@string/tossDice"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/sides_fragmentDice_textView" />
@@ -203,11 +201,11 @@
                 android:id="@+id/dice_fragmentDice_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="24dp"
                 android:text="@string/dice"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tossDice_fragmentDice_textView" />
 
@@ -215,10 +213,10 @@
                 android:id="@+id/diceTitle_fragmentDice_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="24dp"
                 android:text="@string/dice"
                 android:textColor="@color/white"
-                android:textSize="30sp"
+                android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />

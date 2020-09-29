@@ -16,4 +16,5 @@
     <string name="numbers">Numbers</string>
     <string name="copy">Copy</string>
     <string name="coins">Coins</string>
+    <string name="appName">Random Number Generator</string>
 </resources>

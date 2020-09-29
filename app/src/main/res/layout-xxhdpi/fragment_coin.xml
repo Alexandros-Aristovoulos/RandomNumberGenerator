@@ -32,7 +32,7 @@
                 android:paddingBottom="4dp"
                 android:text="@string/flipCoin"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/quantity_coinFragment_editTextNumber" />
@@ -50,7 +50,7 @@
                 android:paddingBottom="4dp"
                 android:text="@string/copy"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 app:drawableEndCompat="@drawable/ic_copy"
                 app:drawableTint="@color/white"
                 app:layout_constraintBaseline_toBaselineOf="@+id/coin_fragmentCoin_textView"
@@ -63,7 +63,7 @@
                 android:layout_marginTop="32dp"
                 android:text="@string/coin"
                 android:textColor="@color/white"
-                android:textSize="30sp"
+                android:textSize="36sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -76,7 +76,7 @@
                 android:layout_marginTop="32dp"
                 android:text="@string/quantity"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/coinTitle_fragmentCoin_textView" />
 
@@ -88,7 +88,7 @@
                 android:layout_marginTop="24dp"
                 android:text="@string/coins"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/flipCoin_fragmentCoin_textView" />
 
@@ -103,7 +103,7 @@
                 android:justificationMode="inter_word"
                 android:textColor="@color/white"
                 android:textIsSelectable="true"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/coin_fragmentCoin_textView" />
@@ -120,7 +120,7 @@
                 android:paddingEnd="16dp"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/quantity_coinFragment_textView"
                 app:layout_constraintStart_toEndOf="@+id/quantity_coinFragment_textView" />
         </androidx.constraintlayout.widget.ConstraintLayout>

@@ -21,7 +21,6 @@
             android:orientation="vertical">
 
             <EditText
-                android:textAlignment="center"
                 android:id="@+id/from_numberFragment_editTextNumber"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -30,8 +29,9 @@
                 android:inputType="number"
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp"
+                android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/from_numberFragment_textView"
                 app:layout_constraintStart_toStartOf="@+id/to_numberFragment_editTextNumber" />
 
@@ -43,7 +43,7 @@
                 android:layout_marginTop="24dp"
                 android:text="@string/numbers"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/generateNumbers_fragmentNumber_textView" />
 
@@ -55,7 +55,7 @@
                 android:layout_marginTop="32dp"
                 android:text="@string/quantity"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/to_numberFragment_textView" />
 
@@ -71,7 +71,7 @@
                 android:paddingBottom="4dp"
                 android:text="@string/generateNum"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/quantity_numberFragment_textView" />
@@ -83,7 +83,7 @@
                 android:layout_marginTop="32dp"
                 android:text="@string/number"
                 android:textColor="@color/white"
-                android:textSize="30sp"
+                android:textSize="50sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -101,7 +101,7 @@
                 android:paddingBottom="4dp"
                 android:text="@string/copy"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 app:drawableEndCompat="@drawable/ic_copy"
                 app:drawableTint="@color/white"
                 app:layout_constraintBaseline_toBaselineOf="@+id/numbers_fragmentNumber_textView"
@@ -115,27 +115,26 @@
                 android:layout_marginTop="32dp"
                 android:text="@string/to"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/from_numberFragment_textView" />
 
             <TextView
-                android:textIsSelectable="true"
-                android:justificationMode="inter_word"
                 android:id="@+id/showNumbers_fragmentNumber_textView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
+                android:justificationMode="inter_word"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textIsSelectable="true"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/numbers_fragmentNumber_textView" />
 
             <EditText
-                android:textAlignment="center"
                 android:id="@+id/quantity_numberFragment_editTextNumber"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -145,8 +144,9 @@
                 android:inputType="number"
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp"
+                android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/quantity_numberFragment_textView"
                 app:layout_constraintStart_toEndOf="@+id/quantity_numberFragment_textView" />
 
@@ -158,12 +158,11 @@
                 android:layout_marginTop="32dp"
                 android:text="@string/from"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/numberTitle_fragmentNumber_textView" />
 
             <EditText
-                android:textAlignment="center"
                 android:id="@+id/to_numberFragment_editTextNumber"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -172,8 +171,9 @@
                 android:inputType="number"
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp"
+                android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/to_numberFragment_textView"
                 app:layout_constraintStart_toStartOf="@+id/quantity_numberFragment_editTextNumber" />
         </androidx.constraintlayout.widget.ConstraintLayout>
