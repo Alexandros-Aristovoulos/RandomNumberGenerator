@@ -88,7 +88,7 @@ class DiceFragment : Fragment() {
     }
 
     private fun diceToss(sides:Int):Int{
-        return MainActivity().rand(0, sides)
+        return MainActivity().rand(1, sides)
     }
 
     private fun getSides():Int{

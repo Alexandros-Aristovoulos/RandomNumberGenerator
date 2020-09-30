@@ -61,6 +61,11 @@ class CoinFragment : Fragment() {
             }
             //show that list
             showCoin_fragmentCoin_textView.text = coinTossList.toString()
+            //count heads and tails
+            val heads = coinTossList.count { it == "heads" }.toString()
+            showNumHeads_fragmentCoin_textView.text = heads
+            val tails = coinTossList.count { it == "tails" }.toString()
+            showNumTails_fragmentCoin_textView.text = tails
         }
 
         copy_fragmentCoin_textView.setOnClickListener {

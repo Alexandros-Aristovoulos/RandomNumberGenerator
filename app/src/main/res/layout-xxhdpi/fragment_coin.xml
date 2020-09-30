@@ -123,6 +123,52 @@
                 android:textSize="20sp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/quantity_coinFragment_textView"
                 app:layout_constraintStart_toEndOf="@+id/quantity_coinFragment_textView" />
+
+            <TextView
+                android:id="@+id/numHeads_fragmentCoin_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/numHeads"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/showCoin_fragmentCoin_textView" />
+
+            <TextView
+                android:id="@+id/numTails_fragmentCoin_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/numTails"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/numHeads_fragmentCoin_textView" />
+
+            <TextView
+                android:id="@+id/showNumHeads_fragmentCoin_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/numHeads_fragmentCoin_textView"
+                app:layout_constraintStart_toEndOf="@+id/numHeads_fragmentCoin_textView" />
+
+            <TextView
+                android:id="@+id/showNumTails_fragmentCoin_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/numTails_fragmentCoin_textView"
+                app:layout_constraintStart_toStartOf="@+id/showNumHeads_fragmentCoin_textView" />
+
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

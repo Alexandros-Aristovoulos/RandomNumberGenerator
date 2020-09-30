@@ -17,4 +17,6 @@
     <string name="copy">Copy</string>
     <string name="coins">Coins</string>
     <string name="appName">Random Number Generator</string>
+    <string name="numTails">Number of Tails</string>
+    <string name="numHeads">Number of Heads</string>
 </resources>
