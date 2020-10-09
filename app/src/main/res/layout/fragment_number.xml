@@ -23,6 +23,7 @@
             <EditText
                 android:textAlignment="center"
                 android:id="@+id/from_numberFragment_editTextNumber"
+                android:nextFocusForward="@+id/to_numberFragment_editTextNumber"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/custom_put_text"
@@ -137,6 +138,7 @@
             <EditText
                 android:textAlignment="center"
                 android:id="@+id/quantity_numberFragment_editTextNumber"
+                android:imeOptions="actionDone"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -164,7 +166,8 @@
 
             <EditText
                 android:textAlignment="center"
-                android:id="@+id/to_numberFragment_editTextNumber"
+                android:id="@+id/from_numberFragment_editTextNumber"
+                android:nextFocusForward="@+id/to_numberFragment_editTextNumber"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/custom_put_text"

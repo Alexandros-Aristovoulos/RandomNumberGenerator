@@ -110,6 +110,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/coin_fragmentCoin_textView" />
 
             <EditText
+                android:imeOptions="actionDone"
                 android:id="@+id/quantity_coinFragment_editTextNumber"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

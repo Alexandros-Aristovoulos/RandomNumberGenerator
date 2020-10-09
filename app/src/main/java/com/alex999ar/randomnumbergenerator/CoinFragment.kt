@@ -34,6 +34,7 @@ class CoinFragment : Fragment() {
         quantity_coinFragment_editTextNumber.setText("1")
 
         flipCoin_fragmentCoin_textView.setOnClickListener {
+
             //list where the results will be stored
             var  coinTossList = mutableListOf<String>()
             //times we will flip the coin

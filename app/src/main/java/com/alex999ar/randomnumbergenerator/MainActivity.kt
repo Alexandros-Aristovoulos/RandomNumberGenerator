@@ -1,7 +1,12 @@
 package com.alex999ar.randomnumbergenerator
 
+import android.app.Activity
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MotionEvent
+import android.view.View
+import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
@@ -30,8 +35,13 @@ class MainActivity : AppCompatActivity() {
         return Random(System.nanoTime()).nextInt(end - start + 1) + start
     }
 
-
-
+    override fun dispatchTouchEvent(ev: MotionEvent?): Boolean {
+        if (currentFocus != null) {
+            val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            imm.hideSoftInputFromWindow(currentFocus!!.windowToken, 0)
+        }
+        return super.dispatchTouchEvent(ev)
+    }
     //close when pressing back
     override fun onBackPressed() {
         super.onBackPressed()
